@@ -1,6 +1,7 @@
 name: Python bindings
 
 on:
+   workflow_dispatch:
    push:
       branches: [RC_2_0]
    pull_request:
