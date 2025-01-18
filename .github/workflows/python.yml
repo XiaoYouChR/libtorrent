@@ -18,11 +18,10 @@ jobs:
 
   test:
     name: build
-    runs-on: ${{ matrix.os }}
-
     strategy:
       matrix:
-        os: [macos-latest]
+        architecture: [x86_64]
+    runs-on: macos-13
 
     steps:
     - uses: actions/checkout@v4
